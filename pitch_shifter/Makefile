@@ -1,8 +1,8 @@
 # Project Name
-TARGET = your_pedal
+TARGET = pitch_shifter
 
 # Sources
-CPP_SOURCES = your_pedal.cpp
+CPP_SOURCES = pitch_shifter.cpp
 
 # Library Locations
 LIBDAISY_DIR = ../libdaisy

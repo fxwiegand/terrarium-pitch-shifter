@@ -1,24 +1,26 @@
-# terrarium-stand
-This repository works as a template for new pedals created for the [terrarium](https://www.pedalpcb.com/product/pcb351/) from [PedalPCB](https://www.pedalpcb.com).
-To create a new pedal, simply create a new git repository using this template and start out with the basic structure in the `your_pedal` directory. Change the name of the directory to whatever you like but make sure you also change `TARGET = your_pedal` in `your_pedal/Makefile`.
+# Pitch Shifter
 
-## Getting started
-Build the daisy libraries with:
-```
-cd DaisySP
-make
-cd ../libDaisy
-make
-```
+A pitch shifter for the [terrarium](https://www.pedalpcb.com/product/pcb351/) from [PedalPCB](https://www.pedalpcb.com).
 
-Then flash your terrarium with:
-```
-cd your_pedal
-# using USB (after entering bootloader mode)
-make program-dfu
-# using JTAG/SWD adaptor (like STLink)
-make program
-```
 
-Note: The template pedal only turns the LED of the terrarium on and off and does no audio processing at all.
-For an example with audio processing generated from this template you can checkout a [reverb](https://github.com/fxwiegand/terrarium-reverb).
+## Author
+
+[Felix Wiegand](https://github.com/fxwiegand)
+
+## Description
+
+Two independently controllable pitch shifters with an individual mix control.
+
+## Controls
+
+| Control | Parameter | Comment |
+| --- | --- | --- |
+| Knob 1 | Mix 1 | Mix control for the first pitch shited signal |
+| Knob 2 | Mix 2 | Mix control for the second pitch shited signal |
+| Knob 3 | Dry Mix | Mix control for the dry signal |
+| Knob 4 | Pitch 1 | Pitch encoder for the first pitch shifter |
+| Knob 5 | Pitch 2 | Pitch encoder for the second pitch shifter |
+| Knob 6 | Volume | Another knob that controls the mix |
+| Switch 1 | Octave 1 | + 1 Octave for Pitch 1 |
+| Switch 2 | Octave 2 | + 1 Octave for Pitch 2 |
+| Footswitch 1 | Bypass | Overall output volume |
